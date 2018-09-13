@@ -30,7 +30,7 @@ def get_random_offset_seq(seq_len, max_offset=0.5):
     while (len(line) < seq_len):
         length = np.random.randint(400,1000)
         coin = np.random.uniform(0,1)
-        if (coin > 0.5):
+        if (coin > 0.6):
             offset = 0
         else:
             offset = np.random.uniform(low=0, high=max_offset)
