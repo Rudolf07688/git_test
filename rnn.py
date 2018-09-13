@@ -46,7 +46,7 @@ def get_random_skew_offset_seq(seq_len, max_offset=1):
     while (line.shape[0] < seq_len):
         length = np.random.randint(600,1000)
         coin = np.random.uniform(0,1)
-        if (coin > 0.7):
+        if (coin > 0.6):
             offset = 0
         else:
             offset = np.random.uniform(low=-0.5, high=max_offset)
